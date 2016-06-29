@@ -1,0 +1,106 @@
+footer .upper-footer{
+	margin:0 !important;
+	padding:0 !important;
+	background:#00a0a3 !important;
+	padding-left:5% !important;
+	padding-left:5% !important;	
+	padding-top:3% !important;
+	padding-bottom:3% !important;	
+
+}
+footer .upper-footer .foot-nav{
+	margin:0 !important;
+	padding:0 !important;
+	width:70% !important;
+	margin: 0 auto 0 !important;
+}
+footer .upper-footer .foot-nav ul{
+	margin:0 !important;
+	padding:0 !important;
+	width:100% !important;
+    list-style:none !important;
+}
+footer .upper-footer .foot-nav ul li{
+	width:16% !important;
+	float:left !important;
+	border-right: #40b8ba solid 1px !important;
+	text-align:center !important;
+		
+}
+footer .upper-footer .foot-nav ul li:last-child{
+	border-right:none !important;
+}
+footer .upper-footer .foot-nav ul li:last-child a{
+  font-weight:600 !important;
+}
+footer .upper-footer .foot-nav ul li a{
+	display:block !important;
+	color:#ffffff !important;
+	text-align:center !important;
+	font-size:16px !important;
+	text-transform:uppercase !important;
+}
+footer .lower-footer{
+	margin:0 !important;
+	padding:0 !important;
+	background:#383636!important;
+	padding-left:5% !important;
+	padding-left:5% !important;	
+	padding-top:2% !important;
+	padding-bottom:2% !important;	
+	
+}
+footer .lower-footer .copyright{
+width:100% !important;
+color:#ffffff !important;
+font-size:16px !important;
+text-align:center !important;
+}
+footer .lower-footer .social-media{
+	width:100% !important;
+	color:#ffffff !important;
+	font-size:16px !important;
+	text-align:center !important;
+
+}
+footer .lower-footer .social-media .btn-social{
+-webkit-border-radius: 90px;
+-moz-border-radius: 90px;
+border-radius: 90px;
+font-size:16px !important;
+}
+@media (max-width: 1199px){
+	footer .upper-footer .foot-nav{
+		width:90% !important;
+	}
+	footer .upper-footer .foot-nav ul li{
+	text-align:center !important;
+	}
+	footer .upper-footer .foot-nav ul li a{
+		font-size:12px !important;
+	}
+}
+@media (max-width: 991px){
+	footer .upper-footer{
+		padding-top:5% !important;
+		padding-bottom:5% !important;	
+
+	}
+footer .upper-footer .foot-nav{
+		width:100% !important;
+	}	
+	footer .lower-footer{
+		padding-top:5% !important;
+		padding-bottom:5% !important;	
+	
+	}
+	footer .upper-footer .foot-nav ul li a{
+		font-size:10px !important;;
+	}
+}
+@media (max-width: 767px){
+	footer .lower-footer .copyright{
+		margin-top:25px !important;
+		font-size:12px !important;;
+	}
+}
