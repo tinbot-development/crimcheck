@@ -1,10 +1,15 @@
 body.home {
     background: #ffffff;
-	padding-left:2% !important;
-	padding-right:2% !important;	
+
 }
 body.home section{
 	width:100%;
+}
+container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
 }
 body.home section .upper-content{
 	padding-left:5% !important;
