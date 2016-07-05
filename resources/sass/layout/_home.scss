@@ -62,6 +62,65 @@ body.home section .upper-content .inside-container .home-banner .button-center{
 body.home section .upper-content .inside-container .home-banner .button-center a{
 	font-size:24px !important;
 }
+body.home section .upper-content .inside-container .lower-banner .lower-content-container{
+margin:0 !important;
+padding:0 !important;
+width:100% !important;
+margin-top:4% !important;
+margin-bottom:2% !important;
+	padding-left:5% !important;
+	padding-right:5% !important;
+}
+body.home section .upper-content .inside-container .lower-banner .lower-content-container .left-side{
+	padding:0 !important;
+	margin:0 !important;
+	width:40% !important;
+	height:350px !important;
+	background:#00a0a3 !important;
+	background-image:url(../images/finger-print.png) !important;
+  	background-size: contain !important;
+    background-position:right top !important;
+    background-repeat:no-repeat !important;
+	float:left !important;
+	padding:3% !important;
+	text-align:center !important;
+	line-height:2em !important;
+}
+body.home section .upper-content .inside-container .lower-banner .lower-content-container .left-side h3{
+color:#ffffff !important;
+fot-size:36px !important;
+
+}
+body.home section .upper-content .inside-container .lower-banner .lower-content-container .left-side .author{
+margin-top:25px !important;
+color:#ffffff !important;
+fot-size:22px !important;
+}
+body.home section .upper-content .inside-container .lower-banner .lower-content-container .right-side{
+	padding:0 !important;
+	margin:0 !important;
+	width:60% !important;
+	height:350px !important;
+	background:#383636 !important;
+	float:left !important;
+	padding:4% !important;
+	text-align:center !important;
+}
+body.home section .upper-content .inside-container .lower-banner .lower-content-container .right-side p{
+ color:#ffffff !important;
+padding-left:6% !important;
+padding-right:6% !important;
+padding-bottom:6% !important;
+line-height:2em !important;
+}
+body.home section .upper-content .inside-container .lower-banner .lower-content-container .right-side .image-center{
+margin:0 !important;
+padding:0 !important;
+width:100% !important;
+}
+body.home section .upper-content .inside-container .lower-banner .lower-content-container .right-side .image-center img{
+margin:0 auto 0 !important;
+}
 
 body.home section .lower-content{
   	position:relative !important;
