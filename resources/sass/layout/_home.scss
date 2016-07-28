@@ -122,47 +122,52 @@ body.home section .upper-content .inside-container .lower-banner .lower-content-
 margin:0 auto 0 !important;
 }
 
-body.home section .lower-content{
-  	position:relative !important;
-  	padding-left:5% !important;
-	padding-right:5% !important;
+body.home section .featured-slider{
+	.inside-container{
+		//background:#e9e9e9 !important;
+		padding-bottom:2% !important;
+		padding-top:3% !important;
+		position:relative !important;
+		.left-wing{
+			position:absolute !important;
+			top:20px !important;
+			left:-5% !important;
+			width:32% !important;
+			min-height:485px;
+			background-image:url(../images/leftwing-img.png) !important;
+			background-size: cover !important;
+			background-position:center top !important;
+			background-repeat:no-repeat !important;
+			padding:5% !important;
+			text-align:center !important;
+			img{
+				margin:0 auto 0 !important;
+			}
+		}
+	}
 }
-body.home section .lower-content .inside-container{
-	background:#e9e9e9 !important;
-	padding-bottom:2% !important;
-	padding-top:3% !important;
-	position:relative !important;
+
+
+body.home section .featured-slider {
+	h3.title-wlines{
+
+		border-bottom:#19bcb9 solid 4px !important;
+		display: inline-block;
+		> a {
+			color:#ffffff;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
 }
-body.home section .lower-content .inside-container .left-wing{
-	position:absolute !important;
-	top:20px !important;
-	left:-5% !important;
-	width:32% !important;
-	min-height:300px !important;
-	background-image:url(../images/leftwing-img.png) !important;
-  	background-size: cover !important;
-    background-position:center top !important;
-    background-repeat:no-repeat !important;
-	padding:5% !important;
-	text-align:center !important;
-}
-body.home section .lower-content .inside-container .left-wing img{
-	margin:0 auto 0 !important;
-}
-body.home section .lower-content .inside-container .left-wing h3.title-wlines{
-padding:0 !important;
-margin:0 !important;
-position: absolute!important;
-left:40% !important;
-color:#ffffff !important;
-border-bottom:#19bcb9 solid 4px !important;
-}
-body.home section .lower-content .inside-container .right-wing{
+
+body.home section .featured-slider .inside-container .right-wing{
 	position:absolute !important;
 	top:20px !important;
 	right:-5% !important;
 	width:32% !important;
-	min-height:300px !important;
+	min-height:485px;
 	background-image:url(../images/rightwing-img.png) !important;
   	background-size: cover !important;
     background-position:center top !important;
@@ -170,18 +175,11 @@ body.home section .lower-content .inside-container .right-wing{
 	padding:5% !important;
 	text-align:center !important;
 }
-body.home section .lower-content .inside-container .right-wing img{
+body.home section .featured-slider .inside-container .right-wing img{
 	margin:0 auto 0 !important;
 }
-body.home section .lower-content .inside-container .right-wing h3.title-wlines{
-padding:0 !important;
-margin:0 !important;
-position: absolute!important;
-left:40% !important;
-color:#ffffff !important;
-border-bottom:#19bcb9 solid 4px !important;
-}
-body.home section .lower-content .inside-container .center-wing{
+
+body.home section .featured-slider .inside-container .center-wing{
 	margin:0 !important;
 	padding:0 !important;
 	width:35% !important;
@@ -190,23 +188,33 @@ body.home section .lower-content .inside-container .center-wing{
 	padding-left:5% !important;
 	padding-right:5% !important;	
 }
-body.home section .lower-content .carousel{
+body.home section .featured-slider .carousel{
 text-align:center !important;
 }
-body.home section .lower-content .carousel h2{
+body.home section .featured-slider .carousel h2{
 color:#00a0a3 !important;
 font-size:36px !important;
 }
-body.home section .lower-content .carousel .carousel-control{
-background:#a4c313 !important;
-width:40px !important;
-max-height:40px !important;
--webkit-border-radius: 50px;
--moz-border-radius: 50px;
-border-radius: 50px;
-margin-top:15px !important;
+body.home section .featured-slider {
+	.carousel {
+		aside.carousel-controls-holder {
+			width: 246px;
+			margin: auto;
+			position: relative;
+			top: -22em;
+			.carousel-control{
+				background: #a4c313 !important;
+				width: 40px !important;
+				height: 40px !important;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+				display: inline-block;
+			}
+		}
+	}
 }
-body.home section .lower-content .carousel .carousel-control .glyphicon{
+body.home section .featured-slider .carousel .carousel-control .glyphicon{
 margin-top:10px !important;
 
 }
