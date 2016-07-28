@@ -1,5 +1,13 @@
 // Add custom font
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800);
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/31a28d");
+
+
+@font-face {font-family: 'Memphis-Lig';src: url('../fonts/31A28D_0_0.eot');src: url('../fonts/31A28D_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/31A28D_0_0.woff2') format('woff2'),url('../fonts/31A28D_0_0.woff') format('woff'),url('../fonts/31A28D_0_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'Memphis-ExtLig';src: url('../fonts/31A28D_1_0.eot');src: url('../fonts/31A28D_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/31A28D_1_0.woff2') format('woff2'),url('../fonts/31A28D_1_0.woff') format('woff'),url('../fonts/31A28D_1_0.ttf') format('truetype');}
 
 
 // Import bootstrap and fontawesome
