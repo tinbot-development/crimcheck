@@ -1,14 +1,27 @@
-// Add custom font
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800);
-/* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/31a28d");
+// Add custom fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800);
 
+//Memphis Fonts
+@font-face {
+  font-family: 'Memphis';
+  src: url('../fonts/31B5BA_0_0.eot');
+  src: url('../fonts/31B5BA_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/31B5BA_0_0.woff2') format('woff2'), url('../fonts/31B5BA_0_0.woff') format('woff'), url('../fonts/31B5BA_0_0.ttf') format('truetype');
+  font-weight: 500;
+}
 
-@font-face {font-family: 'Memphis-Lig';src: url('../fonts/31A28D_0_0.eot');src: url('../fonts/31A28D_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/31A28D_0_0.woff2') format('woff2'),url('../fonts/31A28D_0_0.woff') format('woff'),url('../fonts/31A28D_0_0.ttf') format('truetype');}
+@font-face {
+  font-family: 'Memphis';
+  src: url('../fonts/31A28D_0_0.eot');
+  src: url('../fonts/31A28D_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/31A28D_0_0.woff2') format('woff2'), url('../fonts/31A28D_0_0.woff') format('woff'), url('../fonts/31A28D_0_0.ttf') format('truetype');
+  font-weight: 300;
+}
 
-
-@font-face {font-family: 'Memphis-ExtLig';src: url('../fonts/31A28D_1_0.eot');src: url('../fonts/31A28D_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/31A28D_1_0.woff2') format('woff2'),url('../fonts/31A28D_1_0.woff') format('woff'),url('../fonts/31A28D_1_0.ttf') format('truetype');}
-
+@font-face {
+  font-family: 'Memphis';
+  src: url('../fonts/31A28D_1_0.eot');
+  src: url('../fonts/31A28D_1_0.eot?#iefix') format('embedded-opentype'), url('../fonts/31A28D_1_0.woff2') format('woff2'), url('../fonts/31A28D_1_0.woff') format('woff'), url('../fonts/31A28D_1_0.ttf') format('truetype');
+  font-weight: 100;
+}
 
 // Import bootstrap and fontawesome
 @import "common/variables";
@@ -29,7 +42,9 @@
 body {
   padding-top: 0px;
 }
+
 .starter-template {
   padding: 40px 15px;
   text-align: center;
 }
+
