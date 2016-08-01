@@ -34,3 +34,15 @@ margin-top:18%;
 .margin_top10{
 margin-top:20%;
 }
+
+@media screen and (min-width: $screen-md) {
+    .pull-right-md {
+        float: right;
+    }
+}
+
+@media screen and (min-width: $screen-sm) {
+    .pull-right-sm {
+        float: right;
+    }
+}

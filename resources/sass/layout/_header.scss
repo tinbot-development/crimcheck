@@ -15,14 +15,16 @@ float:left;
 
 }
 header.page-header .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-	color: #777;
+	color: #383636;
     background: none;
 }
 header.page-header .navbar-default .navbar-nav>.active{
-
-	color: #777;
+	color: #383636;
     background: none;
-	border-top:#a4c313 solid 5px;
+	@media screen and (min-width: $screen-sm-min) {
+		border-top:#a4c313 solid 5px;
+	}
+
 }
 header.page-header .logo-hdr{
 margin:0;
@@ -32,10 +34,7 @@ min-height:153px;
 float:left;
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#20b8bb+0,67c8ca+47,67c8ca+47,51c2c4+50,00a7aa+100 */
 background: #20b8bb; /* Old browsers */
-//background: -moz-linear-gradient(top,  #20b8bb 0%, #67c8ca 47%, #67c8ca 47%, #51c2c4 50%, #00a7aa 100%); /* FF3.6-15 */
-//background: -webkit-linear-gradient(top,  #20b8bb 0%,#67c8ca 47%,#67c8ca 47%,#51c2c4 50%,#00a7aa 100%); /* Chrome10-25,Safari5.1-6 */
-//background: linear-gradient(to bottom,  #20b8bb 0%,#67c8ca 47%,#67c8ca 47%,#51c2c4 50%,#00a7aa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20b8bb', endColorstr='#00a7aa',GradientType=0 ); /* IE6-9 */
+
 	a {
 		height: 153px;
 		width: 100%;
@@ -47,6 +46,7 @@ background: #20b8bb; /* Old browsers */
 			width: auto;
 			height: auto;
 			position: absolute;
+			top: 0;
 			bottom: 0;
 			left: 0;
 			right: 0;
@@ -80,22 +80,26 @@ margin:0;
 header.page-header .nav{
 width:100%;
 }
-header.page-header .nav li{
+header.page-header .nav > li{
 width:16.6%;
 float:left;
 text-align:center;
 border-top:#ffffff solid 5px;
+
+	&:hover{
+		border-top:#a4c313 solid 5px;
+	}
+
 }
-header.page-header .nav li:hover{
-	border-top:#a4c313 solid 5px;
-}
+
 header.page-header .nav li a{
-margin-top:45px;
-border-right:#d7d7d7 solid 1px;
-margin-bottom:18px;
-text-transform:uppercase;
-font-weight:300;
-font-size:15px;
+	margin-top: 45px;
+	border-right: #d7d7d7 solid 1px;
+	margin-bottom: 18px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 18px;
+	color: #383636;
 }
 header.page-header .nav li:last-child a{
 	border-right:none;;
@@ -119,7 +123,7 @@ header.page-header .nav li:last-child a{
 		font-size:10px;
 	}
 }
-@media (max-width: 767px){
+@media (max-width: $screen-sm){
 	header.page-header .logo-hdr{
 	width:100%;
 	}
@@ -129,21 +133,26 @@ header.page-header .nav li:last-child a{
 	header.page-header .navbar-default {
 		width:100%;	
 	}
-	header.page-header .nav li{
-		margin:0;
-		padding:0;
-		width:100%;
-		border-top:none;	
-		margin-top:8px;
+	header.page-header .nav {
+		background-color: #e9e9e9;
+		> li{
+			margin:0;
+			padding:0;
+			width:100%;
+			border-top:none !important;
+
+			> a {
+				font-size: 16px;
+				text-align: center;
+				padding: 10px 0;
+				margin: 0;
+				border-right:none;
+				&:hover {
+						background-color: white;
+				}
+			}
+		}
 	}
-	header.page-header .nav li:hover{
-		border-top:#a4c313 solid 5px;
-	}
-	header.page-header .nav li a{
-		margin:0;
-		padding:0;	
-		border-right:none;;
-		text-align:right;
-		font-size:12px;
-	}
+
+
 }
