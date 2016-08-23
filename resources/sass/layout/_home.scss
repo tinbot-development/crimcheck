@@ -44,7 +44,7 @@ body.home section .upper-content .inside-container .home-banner h1 {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-size: 72px;
+
   color: #ffffff;
   text-align: center;
 }
@@ -87,21 +87,24 @@ body.home section .upper-content .inside-container .lower-banner .lower-content-
   margin: 0;
   background: #00a0a3;
   background-image: url(../images/finger-print.png);
-  background-size: contain;
-  background-position: right top;
+  background-size: 350px;
+  background-position: center center;
   background-repeat: no-repeat;
   float: left;
   padding: 3%;
   text-align: center;
   line-height: 1.8em;
+  @media screen and (max-width: $screen-xs-max) {
+    background-size: 55%;
+  }
 
-  h3 {
+  h5 {
     color: #ffffff;
-    font-size: 60px;
     font-weight: 300;
     text-align: center;
     margin: 15px auto 30px;
     width: 80%;
+
   }
 }
 
@@ -146,8 +149,11 @@ body.home section .upper-content .inside-container .lower-banner .lower-content-
       @media screen and (min-width: $screen-md) {
         height: 550px;
       }
+      @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+          min-height: 707px;
+      }
       @media screen and (max-width: $screen-xs) {
-        height: 406px;
+        min-height: 406px;
       }
   }
 }
@@ -202,7 +208,7 @@ body.home section .featured-slider {
 }
 
 body.home section .featured-slider {
-  h3.title-wlines {
+  .title-wlines {
     border-bottom: #19bcb9 solid 4px;
     display: inline-block;
     > a {

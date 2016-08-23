@@ -38,7 +38,6 @@ body.page section .upper-content .inside-container .page-banner h1{
 	margin:0;
 	padding:0;
 	width:100%;
-	font-size:72px;
 	color:#ffffff;
 	text-align:center;
 }
@@ -109,27 +108,26 @@ width:100%;
 margin-top:4%;
 margin-bottom:2%;
 background:#ffffff;
-padding-bottom:5%;;
-
+padding-bottom:5%;
+	&.same-height {
+		padding-bottom: 0;
+	}
 }
 body.page section .upper-content .inside-container .lower-banner .lower-content-container .left-content{
 	padding:0;
 	margin:0;
 	width:65%;
-	min-height:350px;
 	background:none;
 	float:left;
 	padding:3%;
 	text-align:left;
 	line-height:2em;
-	border-right:#cccccc solid 2px;
+	border-right:#cccccc solid 1px;
 }
 body.page section .upper-content .inside-container .lower-banner .lower-content-container .right-content{
 	padding:0;
 	margin:0;
 	width:35%;
-	min-height:350px;
-	
 	float:left;
 	padding:3%;
 	text-align:left;
@@ -162,9 +160,8 @@ body.page section .upper-content .inside-container .lower-banner .lower-content-
 	line-height:2em;
 	border-right:#cccccc solid 1px;
 }
-body.page section .upper-content .inside-container .lower-banner .lower-content-container .left-side h3{
+body.page section .upper-content .inside-container .lower-banner .lower-content-container .left-side h4{
 	color:#000000;
-	font-size:36px;
 }
 body.page section .upper-content .inside-container .lower-banner .lower-content-container .left-side .author{
 margin-top:25px;
@@ -183,7 +180,6 @@ body.page section .upper-content .inside-container .lower-banner .lower-content-
 	margin:0;
 	width:50%;
 	min-height:350px;
-	border-left:#cccccc solid 1px;
 	float:left;
 	padding:6%;
 	text-align:left;
@@ -260,8 +256,7 @@ line-height:1.9em;
 	}
 	body.page section .upper-content .inside-container .lower-banner .lower-content-container .right-side{
 		width:100%;
-		border-left:none;
-		
+		border-top: 1px solid #ccc;
 	}
 	body.page section .upper-content .inside-container .lower-banner .lower-content-container .right-side p{
 		text-align:center;
