@@ -274,3 +274,11 @@ line-height:1.9em;
 	margin:0 auto 0;
 	}		
 }
+
+body.page {
+	&.faq {
+		section .upper-content .inside-container .lower-banner {
+			margin-top: 4%;
+		}
+	}
+}
