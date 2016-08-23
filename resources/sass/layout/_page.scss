@@ -132,6 +132,8 @@ body.page section .upper-content .inside-container .lower-banner .lower-content-
 	padding:3%;
 	text-align:left;
 }
+
+
 body.page section .upper-content .inside-container .lower-banner .lower-content-container .right-content .map-container{
 margin-top:30px;
 }
@@ -254,25 +256,36 @@ line-height:1.9em;
 	display:block;
 	font-size:22px;
 	}
-	body.page section .upper-content .inside-container .lower-banner .lower-content-container .right-side{
-		width:100%;
-		border-top: 1px solid #ccc;
-	}
-	body.page section .upper-content .inside-container .lower-banner .lower-content-container .right-side p{
-		text-align:center;
-	}		
-	body.page section .upper-content .inside-container .lower-banner .lower-content-container .left-side{
 
-		width:100%;
-		border-right:none;
-		
+	body.page section .upper-content .inside-container .lower-banner .lower-content-container {
+		.right-content,
+		.right-side{
+			width:100%;
+			border-top: 1px solid #ccc;
+			p{
+				text-align:center;
+			}
+		}
 	}
-	body.page section .upper-content .inside-container .lower-banner .lower-content-container .left-side p{
-		text-align:center;
+
+	body.page section .upper-content .inside-container .lower-banner .lower-content-container {
+		.left-content,
+		.left-side{
+			width:100%;
+			border-right:none;
+			p{
+				text-align:center;
+			}
+		}
 	}
+
 	.testimonial-item img{
 	margin:0 auto 0;
-	}		
+	}
+
+	.img-responsive {
+		margin: auto;
+	}
 }
 
 body.page {
