@@ -178,7 +178,11 @@
                                         	
                                             <div class="col-lg-12">
                                             	<div class="map-container">
-                                                	<img src="images/map-sample.png" alt="map" class="img-responsive" />
+                                                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyB7MOR89Fd3RUSz2UNyCcxmfNjrizgO1U8'></script>
+                                                    <div style='overflow:hidden;height:400px;width:100%;'>
+                                                        <div id='gmap_canvas' style='height:400px;width:520px;'></div>
+                                                        <style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+                                                    <script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(-37.826,145.15100000000007),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-37.826,145.15100000000007)});infowindow = new google.maps.InfoWindow({content:'<strong>Crimcheck</strong><br>P.O. Box 252,Blackburn<br>3130 VIC<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
                                       			</div>	
                                             </div>
                                         </div>

@@ -245,6 +245,24 @@ body.page section .testimonial-portion .inner-contain .testimonial-item-other p{
 font-size:16px;
 line-height:1.9em;
 }
+
+body.features section .upper-content .inside-container .lower-banner .lower-content-container{
+	margin:0;
+	padding:0;
+	width:100%;
+	margin-top:4%;
+	margin-bottom:2%;
+	background:#ffffff;
+	padding-bottom:5%;
+	&.same-height {
+		padding-bottom: 0;
+		.box {
+			.row {
+				min-height: 211px;
+			}
+		}
+	}
+}
 @media (max-width: 991px){
 	body.page section .upper-content .inside-container .contact-portion .contact-btn-holder{
 	width:40%;
@@ -258,6 +276,7 @@ line-height:1.9em;
 	}
 
 	body.page section .upper-content .inside-container .lower-banner .lower-content-container {
+
 		.right-content,
 		.right-side{
 			width:100%;
